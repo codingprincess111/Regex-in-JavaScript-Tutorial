@@ -9,7 +9,11 @@ delving into practical examples and providing in-depth explanations. Our focus w
 
 This tutorial will consistently refer to the provided regular expression (regex) displayed below for the purpose of analyzing each regex component. The regex components discussed in this document include: anchors, quantifiers, grouping constructs, bracket expressions, character classes, and finally character escapes. 
 
+
+```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+<br>
 
 ## Table of Contents
 
