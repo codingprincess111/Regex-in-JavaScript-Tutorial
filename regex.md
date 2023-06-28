@@ -95,12 +95,16 @@ Character classes, known as character sets, are a short more concise regular exp
 
 - Character Classes: `[a-z0-9_\.-]`: This character class matches lowercase letters `(a-z)`, digits `(0-9)`, underscores `(_)`, dots `(.)`, and hyphens `(-)`. These sets represent multiple characters, allowing a singe character match from specified range. 
 <br>
+
 - Metacharacters: `[\da-z\.-]`: This character class matches digits `(\d)`, lowercase letters `(a-z)`, dots `(.)`, and hyphens `(-)` is used as a literal character without escaping because it is placed at the beginning or end of a character set and are placed inside character classes `[a-z0-9_\.-]`. Underscores would not be valid. 
 <br>
+
 Example:
+
 <br>
-1.`heather-summers@bootcamp.com` **(valid)** 
-2.`heather@summers_bootcamp.com` **(invalid)** this is considered invalid because the underscore is in the domain part of the address. 
+1.`heather-summers@bootcamp.com` (valid) 
+<br>
+2.`heather@summers_bootcamp.com` (invalid) this is considered invalid because the underscore is in the domain part of the address. 
 <br>
 - Repeating Character Classes: The email regex employs quantifiers such as `+` and `{2,6}` to handle repeating character classes, as mentioned earlier. The plus sign `(+)` signifies that the preceding character class or set should occur one or more times, as seen in `[a-z0-9_.-]+` and `[\da-z.-]+`. On the other hand, the curly braces `({2,6})` establish a specific range of repetitions for the preceding character class or set. For instance, `[a-z.]{2,6}` matches between 2 and 6 occurrences of lowercase letters or literal periods (dots).
 <br>
