@@ -113,7 +113,7 @@ Example:
 - Repeating Character Classes: The email regex employs quantifiers such as `+` and `{2,6}` to handle repeating character classes, as mentioned earlier. The plus sign `(+)` signifies that the preceding character class or set should occur one or more times, as seen in `[a-z0-9_.-]+` and `[\da-z.-]+`. On the other hand, the curly braces `({2,6})` establish a specific range of repetitions for the preceding character class or set. For instance, `[a-z.]{2,6}` matches between 2 and 6 occurrences of lowercase letters or literal periods (dots).
 <br>
 
-- Conclusion: Character sets, metacharacters within character classes, and repeating character classes collaborate to form flexible regex patterns. Familiarizing ourselves with their usage empowers us to construct regex patterns that are both efficient and powerful for different scenarios. This tutorial showcases the application of these elements in creating a regex pattern specifically designed for matching email addresses. By mastering these concepts, we can enhance our ability to construct regex patterns that meet our specific requirements with precision and effectiveness.
+Conclusion: Character sets, metacharacters within character classes, and repeating character classes collaborate to form flexible regex patterns. Familiarizing ourselves with their usage empowers us to construct regex patterns that are both efficient and powerful for different scenarios. This tutorial showcases the application of these elements in creating a regex pattern specifically designed for matching email addresses. By mastering these concepts, we can enhance our ability to construct regex patterns that meet our specific requirements with precision and effectiveness.
 <br>
 
 ## Character Escapes
@@ -162,4 +162,4 @@ Breakdown of the expression:
 
 Follow me on GitHub at [codingprincess111](https://github.com/codingprincess111)
 <br>
-Deployed GitHub-Gist Link: [Deployed GitHub-Gist Link: Click Here]()
+Deployed GitHub-Gist Link: [Deployed GitHub-Gist Link: Click Here](https://gist.github.com/codingprincess111/d95954b18d6758938cf182dba85e347a)
