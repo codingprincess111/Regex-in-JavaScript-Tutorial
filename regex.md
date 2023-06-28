@@ -92,7 +92,7 @@ These quantifiers help define the expected repetition of characters or character
 ## Character Classes
 
 Character classes, known as character sets, are a short more concise regular expression that represent specific sets of characters. The regex featured in this tutorial also uses various regex elements including character classes, character sets, metacharacters, and repeating character classes. These elements ensure the regex are assessed and sourced accurately to match the email addresses.
-<br>
+
 - Character Classes: `[a-z0-9_\.-]`: This character class matches lowercase letters `(a-z)`, digits `(0-9)`, underscores `(_)`, dots `(.)`, and hyphens `(-)`. These sets represent multiple characters, allowing a singe character match from specified range. 
 <br>
 - Metacharacters: `[\da-z\.-]`: This character class matches digits `(\d)`, lowercase letters `(a-z)`, dots `(.)`, and hyphens `(-)` is used as a literal character without escaping because it is placed at the beginning or end of a character set and are placed inside character classes `[a-z0-9_\.-]`. Underscores would not be valid. 
