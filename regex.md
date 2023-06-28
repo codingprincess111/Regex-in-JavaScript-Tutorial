@@ -66,9 +66,10 @@ This specific pattern of the regex will match email addresses that begin with on
 
 <br>
 In email validation, the `$` anchor is placed at the end of the regex pattern to indicate that the preceding pattern must match at the end of the string. This specific pattern of the regex ensures the email address ends with a specified pattern and will match email addresses that end with a dot followed by two or more alphabetical characters.
+
 <br>
 
-**Example:** (I struggled with figuring out how to format this)
+**Examples in JavaScript**:
 
 -const regex = `/\.[a-zA-Z]{2,}$/;`
 <br>
