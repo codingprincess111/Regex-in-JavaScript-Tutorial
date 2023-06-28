@@ -64,15 +64,12 @@ console.log(regex.test`("@wrong.com"));`       // Output: false
 <br>
 In email validation, the `$` anchor is placed at the end of the regex pattern to indicate that the preceding pattern must match at the end of the string. This specific pattern of the regex ensures the email address ends with a specified pattern and will match email addresses that end with a dot followed by two or more alphabetical characters.
 
-**Example** 
+**Example:** 
 
-*const regex = `/\.[a-zA-Z]{2,}$/;`
-<br>
-*console.log(regex.test`("heather@email.com"));`  // Output: true
-<br>
-*console.log(regex.test`("test456@domain.com"));` // Output: true
-<br>
-*console.log(regex.test`("wrong.com."));`       // Output: false
+* const regex = `/\.[a-zA-Z]{2,}$/;`
+* console.log(regex.test`("heather@email.com"));`  // Output: true
+* console.log(regex.test`("test456@domain.com"));` // Output: true
+* console.log(regex.test`("wrong.com."));`       // Output: false
 
 <br>
 
