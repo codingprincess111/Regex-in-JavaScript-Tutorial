@@ -54,14 +54,16 @@ Example three: the regex `hello$` identifies at the end of the string that has `
 
 <br>
 This specific pattern of the regex will match email addresses that begin with one or more characters. dots, underscores, or hyphens followed by the `@` symbol.
+
+
 <br>
 -const regex = `/^[a-zA-Z0-9._-]+@/`;
 <br>
--console.log(regex.test`("heather@email.com"));`  // **Output: true**
+-console.log(regex.test`("heather@email.com"));`  // Output: true
 <br>
--console.log(regex.test`("test123@domain.com"));` // **Output: true**
+-console.log(regex.test`("test123@domain.com"));` // Output: true
 <br>
--console.log(regex.test`("@wrong.com"));`       // **Output: false**
+-console.log(regex.test`("@wrong.com"));`       // Output: false
 
 <br>
 In email validation, the `$` anchor is placed at the end of the regex pattern to indicate that the preceding pattern must match at the end of the string. This specific pattern of the regex ensures the email address ends with a specified pattern and will match email addresses that end with a dot followed by two or more alphabetical characters.
