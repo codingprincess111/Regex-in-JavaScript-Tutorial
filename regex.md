@@ -49,30 +49,24 @@ Example Two: the regex pattern `^hello` is used to find strings in which the seq
 Example three: the regex `hello$` identifies at the end of the string that has `"hello"`. It successfully finds a match when `"hello"` is found at the end of the string `"world hello"`. However, it does not identify when `"hello"` is located at the end of the string `"hello world"` because the string does not conclude `"hello"`.
 
 <br> 
-Examples in JavaScript: 
+**Examples in JavaScript:** 
 <br>
 This specific pattern of the regex will match email addresses that begin with one or more characters. dots, underscores, or hyphens followed by the `@` symbol.
 <br>
-const regex = `/^[a-zA-Z0-9._-]+@/`;
-<br>
-console.log(regex.test`("heather@email.com"));`  // Output: true
-<br>
-console.log(regex.test`("test123@domain.com"));` // Output: true
-<br>
-console.log(regex.test`("@wrong.com"));`       // Output: false
+-const regex = `/^[a-zA-Z0-9._-]+@/`;
+-console.log(regex.test`("heather@email.com"));`  // **Output: true**
+-console.log(regex.test`("test123@domain.com"));` // **Output: true**
+-console.log(regex.test`("@wrong.com"));`       // **Output: false**
 
 <br>
 In email validation, the `$` anchor is placed at the end of the regex pattern to indicate that the preceding pattern must match at the end of the string. This specific pattern of the regex ensures the email address ends with a specified pattern and will match email addresses that end with a dot followed by two or more alphabetical characters.
 
-**Example:** 
+**Example:** (I struggled with figuring out how to format this)
 
-`const regex = `/\.[a-zA-Z]{2,}$/;`
-<br>
-console.log(regex.test`("heather@email.com"));`  // Output: true
-<br>
-console.log(regex.test`("test456@domain.com"));` // Output: true
-<br>
-console.log(regex.test`("wrong.com."));`       // Output: false`
+-const regex = `/\.[a-zA-Z]{2,}$/;`
+-console.log(regex.test`("heather@email.com"));`  // Output: true
+-console.log(regex.test`("test456@domain.com"));` // Output: true
+-console.log(regex.test`("wrong.com."));`       // Output: false
 
 <br>
 
@@ -85,7 +79,7 @@ The `+` quantifier specifies that the preceding element must occur one or more t
 These quantifiers help define the expected repetition of characters or character classes within the different components of an email address. They ensure that the email address adheres to specific patterns and length constraints.
 
 
-### Character Classes
+## Character Classes
 
 Character classes, known as character sets, are a short more concise regular expression that represent specific sets of characters. The regex featured in this tutorial also uses various regex elements including character classes, character sets, metacharacters, and repeating character classes. These elements ensure the regex are assessed and sourced accurately to match the email addresses.
 <br>
@@ -116,7 +110,7 @@ If the dot (.) is not escaped in a regular expression, it becomes a wildcard cha
 To avoid this issue, we escape the dot (.) by using a backslash (\), like this: \\. By escaping the dot, we enforce that the regex pattern only matches valid email addresses with literal periods in the correct positions. This prevents the dot from functioning as a wildcard and ensures more precise and accurate pattern matching for email validation.
 
 
-### Grouping and Capturing
+## Grouping and Capturing
 
 Grouping constructs in regular expressions (regex) allow us to group characters or sub-expressions together and treat them as a single unit within the expression. They are denoted by parentheses () and serve several important purposes:
 
@@ -130,7 +124,7 @@ By utilizing grouping constructs in regular expressions, we gain more control ov
 
 The regular expression featured in this tutorial contains 3 grouping contructs enclosed amoung parentheses (). Each group captures a different part of the email address: 1. Local-Part `([a-z0-9_\.-]+)`matches the username of the email address, 2. Domain `([\da-z\.-]+)` corresponds and matches the domain name, 3. Top-level Domain `([a-z\.]{2,6})`aligns and matches the top-level domain. By utilizing these grouping constructs within the regex pattern, each component of the email address is effectively captured and validated individually. This approach ensures that the email address as a whole adheres to the accepted standards and validates its different parts accurately.
 
-### Bracket Expressions
+## Bracket Expressions
 
 The bracket expression `[a-z\.]{2,6}` matches any singe character in the range a-z or the literal (`.`) character. The expression is then followed by the quantifier {2,6} , matched characters must occur between 2 and 6 times, inclusive. 
 <br>
