@@ -63,18 +63,20 @@ console.log(regex.test`("@wrong.com"));`       // Output: false
 
 <br>
 In email validation, the `$` anchor is placed at the end of the regex pattern to indicate that the preceding pattern must match at the end of the string. This specific pattern of the regex ensures the email address ends with a specified pattern and will match email addresses that end with a dot followed by two or more alphabetical characters.
+
+**Example** 
+
+*const regex = `/\.[a-zA-Z]{2,}$/;`
+<br>
+*console.log(regex.test`("heather@email.com"));`  // Output: true
+<br>
+*console.log(regex.test`("test456@domain.com"));` // Output: true
+<br>
+*console.log(regex.test`("wrong.com."));`       // Output: false
+
 <br>
 
-const regex = `/\.[a-zA-Z]{2,}$/;`
-<br>
-console.log(regex.test`("heather@email.com"));`  // Output: true
-<br>
-console.log(regex.test`("test456@domain.com"));` // Output: true
-<br>
-console.log(regex.test`("wrong.com."));`       // Output: false
-
-<br>
-### Quantifiers
+## Quantifiers
 
 Quantifiers serve the purpose of indicating the desired number of matches for a pattern. These quantifiers are positioned after a character, character class, or group, enabling the specification of the min and max occurance range for the pattern. 
 <br>
