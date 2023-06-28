@@ -53,9 +53,12 @@ Examples in JavaScript:
 <br>
 This specific pattern of the regex will match email addresses that begin with one or more characters. dots, underscores, or hyphens followed by the `@` symbol.
 <br>
-const regex = `/^[a-zA-Z0-9._-]+@/`; 
+const regex = `/^[a-zA-Z0-9._-]+@/`;
+<br>
 console.log(regex.test`("heather@email.com"));`  // Output: true
+<br>
 console.log(regex.test`("test123@domain.com"));` // Output: true
+<br>
 console.log(regex.test`("@wrong.com"));`       // Output: false
 
 <br>
