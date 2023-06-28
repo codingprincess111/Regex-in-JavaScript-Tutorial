@@ -66,10 +66,10 @@ In email validation, the `$` anchor is placed at the end of the regex pattern to
 
 **Example:** 
 
-* const regex = `/\.[a-zA-Z]{2,}$/;`
-* console.log(regex.test`("heather@email.com"));`  // Output: true
-* console.log(regex.test`("test456@domain.com"));` // Output: true
-* console.log(regex.test`("wrong.com."));`       // Output: false
+`const regex = `/\.[a-zA-Z]{2,}$/;`
+console.log(regex.test`("heather@email.com"));`  // Output: true
+console.log(regex.test`("test456@domain.com"));` // Output: true
+console.log(regex.test`("wrong.com."));`       // Output: false`
 
 <br>
 
