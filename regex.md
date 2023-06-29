@@ -163,4 +163,5 @@ Breakdown of the expression:
 Follow me on GitHub at [codingprincess111](https://github.com/codingprincess111)
 <br>
 Deployed GitHub-Gist Link: [Deployed GitHub-Gist Link: Click Here](https://gist.github.com/codingprincess111/d95954b18d6758938cf182dba85e347a)
+<br>
 GitHub Repository: [GitHub Repository: Click Here](https://github.com/codingprincess111/Regex-in-JavaScript-Tutorial)
